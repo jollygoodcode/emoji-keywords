@@ -34,7 +34,7 @@ Slack use the `-` to represent ZWJ:
 :man-heart-man:
 ```
 
-I followed Slack's convention in emoji-keywords.
+I followed Slack's convention in Emoji Keywords.
 
 See full [Emoji ZWJ Sequences Catalog](http://www.unicode.org/emoji/charts/emoji-zwj-sequences.html).
 
