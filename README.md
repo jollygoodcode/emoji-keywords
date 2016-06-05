@@ -57,7 +57,7 @@ For example, boy emoji, The base is `:boy:`. You can add skin tone modifiers (U+
 
 ## Slack keywords limitations
 
-### Some emojis cannot type to Slack but emoji-keywords has them :smirk:
+### Some emojis cannot type on Slack but emoji-keywords has them :smirk:
 
 from `:a:` to `:z:` (except `:a:`, `:b:`, `:m:`, `:o:`, `:v:`, `:x:`)
 
