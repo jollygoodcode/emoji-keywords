@@ -31,8 +31,6 @@ For example, boy emoji, The base is `:boy`. You can add skin tone modifiers (U+1
 :boy::skin-tone-6:
 ```
 
-:man:
-
 ## Slack keywords limitations
 
 ### Some emojis cannot type to Slack but emoji-keywords has them :smirk:
