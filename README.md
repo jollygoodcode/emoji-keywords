@@ -49,7 +49,7 @@ require_relative "./slack"
 
 logger = Logger.new("sent.log")
 
-IO.readlines("source.txt").each_with_index do |line, index|
+IO.readlines("twemoji-js-v2-unicodes").each_with_index do |line, index|
   cleaned = line.chomp.gsub(?", "")
   logger.info %(Index: #{index}: Post "#{cleaned}" to Slack.)
   Slack.post(cleaned); sleep 0.3
@@ -199,7 +199,10 @@ end
 
 Use this `ExtractEmoji` and some nokogiri to parse them out:
 
+```ruby
 require "nokogiri"
+require_relative "./extract_emoji"
+
 raw_data = IO.read "emoji-dump.html"
 document = Nokogiri::HTML::Document.parse raw_data
 htmls = document.css("span.message_body").map(&:to_html).map do |html|
@@ -209,9 +212,18 @@ end
 emoji_lists = htmls.map { |html| ExtractEmoji.new(html).call }
 ```
 
-But then I find some emojis did not have the Emoji color modifiers.
+However, I find some emojis did not have the Emoji color modifiers, e.g.:
 
-So I write a `AppendSkinColors` to append `skin-tone-{2,3,4,5,6}` to fix:
+```
+{ "santa" => ":santa:" },
+{ "santa" => ":santa:" },
+{ "santa" => ":santa:" },
+{ "santa" => ":santa:" },
+{ "santa" => ":santa:" },
+{ "santa" => ":santa:" },
+```
+
+So I write a `AppendSkinColors` to append `skin-tone-{2,3,4,5,6}` to fix those:
 
 ```ruby
 # frozen_string_literal: true
@@ -333,9 +345,9 @@ with_skin_colors = AppendSkinTones.new(emoji_lists.dup).call
 IO.write "emoji-lists", with_skin_colors.join("\n")
 ```
 
-Then I merge the `emoji-lists` file and `sources.txt`.
+Then I take the keywords from `emoji-lists` and merge with `twemoji-js-v2-unicodes` file.
 
-Then I put the result in a Ruby class constant:
+Resulting in this `TwemojiJS::MAP` constant:
 
 ```
 class TwemojiJS
@@ -356,7 +368,7 @@ Then load this constant in the irb console.
 
 Because Ruby will tell you if any duplication exists.
 
-Then I manully fix all the duplications.
+I manully fix all the duplications.
 
 Then generate the YAML and JSON:
 
@@ -365,6 +377,8 @@ require "yaml"; require "json"
 IO.write "keywords.yaml", TwemojiJS::MAP.to_yaml
 IO.write "keywords.json", TwemojiJS::MAP.to_json
 ```
+
+Voila!
 
 ## Maintained by Jolly Good Code
 
