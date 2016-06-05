@@ -46,6 +46,10 @@ What does this mean is some emojis have a base color plus 5 modifiers.
 
 For example, boy emoji, The base is `:boy:`. You can add skin tone modifiers (U+1F3FB ~ U+1F3FF):
 
+<img width="486" alt="screenshot 2016-06-06 03 39 25" src="https://cloud.githubusercontent.com/assets/1000669/15807755/622ff46e-2b98-11e6-87c5-6bba1f27e10e.png">
+
+Slack uses `:skin-tone-{2..6}:` to represent the modifiers:
+
 ```
 :boy:
 :boy::skin-tone-2:
