@@ -44,7 +44,7 @@ Unicode 8.0 adds [diversity support](http://unicode.org/reports/tr51/#Diversity)
 
 What does this mean is some emojis have a base color plus 5 modifiers.
 
-For example, boy emoji, The base is `:boy`. You can add skin tone modifiers (U+1F3FB ~ U+1F3FF):
+For example, boy emoji, The base is `:boy:`. You can add skin tone modifiers (U+1F3FB ~ U+1F3FF):
 
 ```
 :boy:
