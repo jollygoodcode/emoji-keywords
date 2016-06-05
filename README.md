@@ -384,25 +384,25 @@ Voila!
 
 ### Some emojis cannot type to Slack but emoji-keywords has them :smirk:
 
-from :a: to :z: (except :a:, :b:, :m:, :o:, :v:, :x:)
+from `:a:` to `:z:` (except `:a:`, `:b:`, `:m:`, `:o:`, `:v:`, `:x:`)
 
 ### Some keywords differ from Slack
 
 Because they're impossible to be use as keyword!
 
-| Slack   | emoji-keywords | Unicode |
-| ------- | -------------- | ------- |
-| :u5272: | :divide:       | U+1F239 |
-| :u5408: | :together:     | U+1F234 |
-| :u55b6: | :operating:    | U+1F23A |
-| :u6307: | :finger:       | U+1F22F |
-| :u6708: | :moon:         | U+1F237 |
-| :u6709: | :exist:        | U+1F236 |
-| :u6e80: | :fullness:     | U+1F235 |
-| :u7121: | :negation:     | U+1F21A |
-| :u7533: | :apply:        | U+1F238 |
-| :u7981: | :prohibit:     | U+1F232 |
-| :u7a7a: | :empty:        | U+1F233 |
+| Slack     | emoji-keywords | Unicode |
+| --------- | -------------- | ------- |
+| `:u5272:` | `:divide:`     | U+1F239 |
+| `:u5408:` | `:together:`   | U+1F234 |
+| `:u55b6:` | `:operating:`  | U+1F23A |
+| `:u6307:` | `:finger:`     | U+1F22F |
+| `:u6708:` | `:moon:`       | U+1F237 |
+| `:u6709:` | `:exist:`      | U+1F236 |
+| `:u6e80:` | `:fullness:`   | U+1F235 |
+| `:u7121:` | `:negation:`   | U+1F21A |
+| `:u7533:` | `:apply:`      | U+1F238 |
+| `:u7981:` | `:prohibit:`   | U+1F232 |
+| `:u7a7a:` | `:empty:`      | U+1F233 |
 
 ## Credits
 
