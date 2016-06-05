@@ -14,6 +14,30 @@ Please see [this wiki](https://github.com/jollygoodcode/emoji-keywords/wiki/How-
 
 ## ZWJ Zero Width Joiner
 
+Since Unicode 6.0, there is a thing called [Emoji ZWJ Sequences](http://www.unicode.org/reports/tr51/#Emoji_ZWJ_Sequences).
+
+ZWJ stands for ZERO WIDTH JOINER (U+200D).
+
+You can use ZWJ to compose emojis from single emojis!
+
+For example, a couple with heart emoji:
+
+<img width="43" alt="U+1F468 U+200D U+2764 U+FE0F U+200D U+1F468" src="https://cloud.githubusercontent.com/assets/1000669/15807407/4d9bee3e-2b90-11e6-846c-557d138f7501.png">
+
+Can be composed by man (U+1F468), heart (U+2764), man (U+1F468):
+
+<img width="116" alt="screenshot 2016-06-06 02 42 02" src="https://cloud.githubusercontent.com/assets/1000669/15807406/4d75ad0a-2b90-11e6-8be7-9fb1754fb632.png">
+
+Slack use the `-` to represent ZWJ:
+
+```
+:man-heart-man:
+```
+
+I followed Slack's convention in emoji-keywords.
+
+See full [Emoji ZWJ Sequences Catalog](http://www.unicode.org/emoji/charts/emoji-zwj-sequences.html).
+
 ## Emoji with Color
 
 Unicode 8.0 adds [diversity support](http://unicode.org/reports/tr51/#Diversity) to Emojis!
