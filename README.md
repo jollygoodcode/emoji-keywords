@@ -59,6 +59,10 @@ Slack uses `:skin-tone-{2..6}:` to represent the modifiers:
 :boy::skin-tone-6:
 ```
 
+which renders:
+
+<img width="37" alt="screenshot 2016-06-06 03 41 34" src="https://cloud.githubusercontent.com/assets/1000669/15807765/9722e352-2b98-11e6-9ef5-07d80b044e39.png">
+
 ## Differences from Emoji Keywords and Slack keywords
 
 ### [Regional Indicator Symbol letters (`1F1E6..1F1FF`)](http://www.unicode.org/Public/emoji/3.0//emoji-data.txt)
