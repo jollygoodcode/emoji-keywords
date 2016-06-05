@@ -61,9 +61,10 @@ For example, boy emoji, The base is `:boy:`. You can add skin tone modifiers (U+
 
 Emoji Keywords use `:a:` to `:z:` for regional indicator symbol letters for consistency.
 
-## Some differences between `:a:`, `:b:`, `:m:`, `:o:`, `:o2`, `:v:`, `:x:`
+Slack uses `:a:`, `:b:`, `:m:`, `:o:`, `:o2`, `:v:`, `:x:` differently:
 
 | Slack   | Emoji Keywords   | [Unicode Name][full-emoji-data]         | UNICODE |
+|-------- | ---------------- | --------------------------------------- | ------- |
 | `:a:`   | `:a_negative:`   | NEGATIVE SQUARED LATIN CAPITAL LETTER A | U+1F170 |
 | `:b:`   | `:b_negative:`   | NEGATIVE SQUARED LATIN CAPITAL LETTER B | U+1F171 |
 | `:m:`   | `:m_circled:`    | CIRCLED LATIN CAPITAL LETTER M          | U+24C2  |
@@ -74,7 +75,7 @@ Emoji Keywords use `:a:` to `:z:` for regional indicator symbol letters for cons
 
 [full-emoji-data]: http://unicode.org/emoji/charts/full-emoji-list.html
 
-Slack does not have `a`..`z` excpet above table mentioned.
+Slack does not have `:a:`..`:z:` excpet above table mentioned.
 
 ### Some keywords differ from Slack
 
