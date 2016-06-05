@@ -55,17 +55,32 @@ For example, boy emoji, The base is `:boy:`. You can add skin tone modifiers (U+
 :boy::skin-tone-6:
 ```
 
-## Slack keywords limitations
+## Differences from Emoji Keywords and Slack keywords
 
-### Some emojis cannot type on Slack but emoji-keywords has them :smirk:
+### [Regional Indicator Symbol letters (`1F1E6..1F1FF`)](http://www.unicode.org/Public/emoji/3.0//emoji-data.txt)
 
-from `:a:` to `:z:` (except `:a:`, `:b:`, `:m:`, `:o:`, `:v:`, `:x:`)
+Emoji Keywords use `:a:` to `:z:` for regional indicator symbol letters for consistency.
+
+## Some differences between `:a:`, `:b:`, `:m:`, `:o:`, `:o2`, `:v:`, `:x:`
+
+| Slack   | Emoji Keywords   | [Unicode Name][full-emoji-data]         | UNICODE |
+| `:a:`   | `:a_negative:`   | NEGATIVE SQUARED LATIN CAPITAL LETTER A | U+1F170 |
+| `:b:`   | `:b_negative:`   | NEGATIVE SQUARED LATIN CAPITAL LETTER B | U+1F171 |
+| `:m:`   | `:m_circled:`    | CIRCLED LATIN CAPITAL LETTER M          | U+24C2  |
+| `:o:`   | `:large_circle:` | HEAVY LARGE CIRCLE                      | U+2B55  |
+| `:o2:`  | `:o_negative:`   | NEGATIVE SQUARED LATIN CAPITAL LETTER O | U+1F17E |
+| `:v:`   | `:victory_hand:` | VICTORY HAND                            | U+270C  |
+| `:x:`   | `:cross_mark:`   | CROSS MARK                              | U+274C  |
+
+[full-emoji-data]: http://unicode.org/emoji/charts/full-emoji-list.html
+
+Slack does not have `a`..`z` excpet above table mentioned.
 
 ### Some keywords differ from Slack
 
 Because they're impossible to remember as keyword.
 
-| Slack     | emoji-keywords | Unicode |
+| Slack     | Emoji Keywords | Unicode |
 | --------- | -------------- | ------- |
 | `:u5272:` | `:divide:`     | U+1F239 |
 | `:u5408:` | `:together:`   | U+1F234 |
