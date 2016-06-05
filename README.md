@@ -63,7 +63,7 @@ from `:a:` to `:z:` (except `:a:`, `:b:`, `:m:`, `:o:`, `:v:`, `:x:`)
 
 ### Some keywords differ from Slack
 
-Because they're impossible to be use and remember as keyword.
+Because they're impossible to remember as keyword.
 
 | Slack     | emoji-keywords | Unicode |
 | --------- | -------------- | ------- |
