@@ -380,11 +380,13 @@ IO.write "keywords.json", TwemojiJS::MAP.to_json
 
 Voila!
 
-## Some emojis cannot type to Slack but emoji-keywords has them :smirk:
+## Slack keywords limitations
+
+### Some emojis cannot type to Slack but emoji-keywords has them :smirk:
 
 from :a: to :z: (except :a:, :b:, :m:, :o:, :v:, :x:)
 
-## Some keywords differ from Slack
+### Some keywords differ from Slack
 
 Because they're impossible to be use as keyword!
 
