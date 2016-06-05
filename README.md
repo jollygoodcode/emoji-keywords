@@ -380,6 +380,11 @@ IO.write "keywords.json", TwemojiJS::MAP.to_json
 
 Voila!
 
+## Credits
+
+- [Twemoji](https://github.com/twitter/twemoji)
+- [Slack](https://slack.com)
+
 ## Maintained by Jolly Good Code
 
 [![Jolly Good Code](https://cloud.githubusercontent.com/assets/1000669/9362336/72f9c406-46d2-11e5-94de-5060e83fcf83.jpg)](http://www.jollygoodcode.com)
