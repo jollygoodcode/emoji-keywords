@@ -2,7 +2,10 @@
 
 Keyword (`:heart:`) to code (`U+2764`) mapping data.
 
-Currently only for [Twemoji.js](https://github.com/twitter/twemoji) (V2) which supports 1661 emojis.
+Currently only for [Twemoji.js](https://github.com/twitter/twemoji)
+
+- [V1](/twemoji/v1) which supports 874 emojis
+- [V2](/twemoji/v2) which supports 1661 emojis.
 
 Available as [YAML](/twemoji/v2/keywords.yaml), and [JSON](/twemoji/v2/keywords.json) format.
 
